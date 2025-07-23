@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'dist'
   },
-  base: 'https://culture-connect-platform-ae65.vercel.app',
+  base: 'https://culture-connect-platform-8hbg.vercel.app',
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
