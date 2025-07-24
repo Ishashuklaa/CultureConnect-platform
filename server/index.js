@@ -17,8 +17,8 @@ dotenv.config();
 
 const app = express();
 const allowedOrigins = [
-  'https://culture-connect-platform-ji4k7ruu3-ishashuklaas-projects.vercel.app',
-  'https://culture-connect-platform.vercel.app'
+  'https://culture-connect-platform.vercel.app',
+  'https://culture-connect-platform-ji4k7ruu3-ishashuklaas-projects.vercel.app'
 ];
 
 app.use(cors({
