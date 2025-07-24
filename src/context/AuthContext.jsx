@@ -12,7 +12,7 @@ export const useAuth = () => {
 };
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api'
+  baseURL: process.env.VITE_API_URL
 });
 
 export const AuthProvider = ({ children }) => {

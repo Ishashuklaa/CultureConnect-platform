@@ -39,11 +39,11 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use('/uploads', express.static('uploads'));
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/cultureconnect', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://ohisha00:72hUoS9gaeyMSyBx@cluster0.x1jp1ss.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-.then(() => console.log('Connected to MongoDB'))
+.then(() => console.log('Connected to MongoDB',process.env.MONGODB_URI))
 .catch((error) => console.error('MongoDB connection error:', error));
 
 // Routes
