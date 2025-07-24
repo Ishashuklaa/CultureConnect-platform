@@ -12,7 +12,7 @@ export const useAuth = () => {
 };
 
 const api = axios.create({
-  baseURL: process.env.VITE_API_URL
+  baseURL: process.env.VITE_API_URL || 'https://cultureconnect-fod8.onrender.com/api'
 });
 console.log("✅ API Base URL:", api.defaults.baseURL);
 
