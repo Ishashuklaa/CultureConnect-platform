@@ -17,7 +17,7 @@ dotenv.config();
 
 const app = express();
 const allowedOrigins = [
-  'https://cultureconnect-fod8.onrender.com',
+process.env.VITE_API_URL || 'https://cultureconnect-fod8.onrender.com/api'
 ];
 
 app.use(cors({
